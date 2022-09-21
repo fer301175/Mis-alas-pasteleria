@@ -1,2 +1,160 @@
 
- 
+/*COLORES*/
+:root {
+--azul:#002B5B;
+--azul_transp: #264872b5;
+--azul2:#2B4865;
+--celeste-oscuro:#256D85;
+--celeste:#8FE3CF;
+--white:white;
+}
+
+* {
+margin: 0;
+padding: 0;
+font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+@import"index";
+@import"tienda";
+@import"curso";
+@import"nosotros";
+@import"contacto";
+
+/*--HEADER COMUN A TODAS LAS PAGINAS -----------*/
+header {
+height: 100px;
+}
+.container-fluid {
+height: 80px;
+  img {
+  width: 180px;
+  height: 160px;
+  }
+}
+  
+/* --FOOTERS COMUN A TODAS LAS PAGINAS ------------*/
+.footer {
+display: flex;
+justify-content: space-around;
+  p {
+  margin-left: 55px;
+  padding: 5%;
+  text-align: center;
+  }
+}
+.flex__divisoria {
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.flex__divisoria2 {
+display: flex;
+}
+.divisoria {
+display: flex;
+justify-content: center;
+  img {
+  width: 30%;
+  height: 100%;
+  }
+}
+.footer__menu {
+width: 15%;
+  li{
+  list-style: none;
+    a{
+    text-decoration: none;  
+      &:hover {
+      font-weight: bold;
+      color: var(--celeste-oscuro);
+      &:hover {
+      color: var(--azul);
+      }
+      }
+    }
+  }
+}
+.footer__menu li a.activo2 {
+font-weight: bold;
+color: var(--azul);
+}
+.redes__flex{
+  margin-left: 60px;
+}
+.redes {
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 15%;
+  img {
+  width: 20px;
+  height: 20px;
+  }
+}
+.redes__f {
+display: flex;
+align-items: center;
+  a {
+  color: #4267B2;
+  }
+}
+.redes__w {
+display: flex;
+align-items: center;
+  a {
+  color: #25D366;
+  }
+}
+.redes__i {
+display: flex;
+align-items: center;
+a {
+color: #C13584;
+}
+}
+
+/* --------MEDIA QUERIES---------- */
+
+@media only screen and (max-width: 576px) {
+/*--HEADER-----------*/
+.navbar > .container-fluid {
+flex-wrap: nowrap;
+}
+/* ---------FOOTERS------------*/
+.flex__divisoria2 {
+flex-direction: column;
+}
+.footer__menu {
+height: 10px;
+    nav{
+    width: 450px;
+    margin-left: 50px;
+        ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        }
+    }
+}
+.footer p {
+margin: 0;
+width: 450px;
+padding: 10px;
+font-size: 15px;
+}
+.redes {
+flex-direction: row;
+width: 100%;
+}
+.redes__flex {
+height: 50px;
+width: 450px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+}
+  
+
+
+/*# sourceMappingURL=style.css.map */

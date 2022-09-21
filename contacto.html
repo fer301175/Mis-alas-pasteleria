@@ -65,45 +65,34 @@
     </header>
     <!-- seccion ingreso de datos y mensaje -->
     <section>
-
         <div class="container__type" >
-
             <div class="encabezado__type">
                 <img src="./img/persona.webp" alt="" height="100"width="100">
                 <h2>Hola!</h2>
             </div>
-
             <div class="type">
-
                 <h2>Ingrese sus datos.</h2>
-
-                <form class="form__flex"> 
-
-                    <div class="datos">  
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" placeholder="Ingrese su Nombre...">
+                <form> 
+                    <div class="form__flex">
+                        <div class="datos">  
+                            <label for="nombre">Nombre</label>
+                            <input class="input" type="text" name="nombre" placeholder="Ingrese su Nombre...">
+                        </div>
+                        <div class="datos">
+                            <label for="mail">Mail</label>
+                            <input class="input" type="text" name="mail" placeholder="Ingrese su Mail...">
+                        </div>
+                        <div class="datos">
+                            <label for="mensaje ">Mensaje</label>
+                            <textarea name="Mensaje" id="" cols="50" rows="10"></textarea>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Enviar">
+                        </div>
                     </div>
-
-                    <div class="datos">
-                        <label for="mail">Mail</label>
-                        <input type="text" name="mail" placeholder="Ingrese su Mail...">
-                    </div>
-
-                    <div class="datos">
-                        <label for="mensaje ">Mensaje</label>
-                        <textarea name="Mensaje" id="" cols="50" rows="10"></textarea>
-                    </div>
-
-                    <div class="submit">
-                        <input type="submit" value="Enviar">
-                    </div>
-
                 </form>
-
             </div>
-
         </div>
-
     </section>
 <!-- seccion direccion y datos de comunicacion -->
     <section>
@@ -113,7 +102,7 @@
             <div class="contacto">
 
                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">                
-                    <div class="btn-group" role="group">
+                    <div class="boton" role="group">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-telephone-fill"></i>Telefono
                         </button>
@@ -123,8 +112,8 @@
                     </div>
                 </div>
 
-                <div class="btn-group" role="group" aria-label="Button group with nested dropdown"                 
-                    <div class="btn-group" role="group">
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">                
+                    <div class="boton" role="group">
                         <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-envelope-fill"></i> Email
                         </button>

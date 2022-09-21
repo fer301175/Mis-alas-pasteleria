@@ -1,0 +1,131 @@
+/*COLORES*/
+:root {
+--azul:#002B5B;
+--azul_transp: #264872b5;
+--azul2:#2B4865;
+--celeste-oscuro:#256D85;
+--celeste:#8FE3CF;
+--white:white;
+}
+* {
+margin: 0;
+padding: 0;
+font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* ---------CURSOS--------- */
+.container__video {
+display: flex;
+flex-direction: column;
+margin: 20px;
+    p {
+    text-align: center;
+    }
+}
+.video {
+display: flex;
+justify-content: center;
+height: 320px;
+}
+#descarga {
+color: var(--celeste-oscuro);
+margin-left: 15px;
+}
+.container__download {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+column-gap: 5px;
+row-gap: 20px;
+justify-items: center;
+    img {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+        &:hover {
+        border-radius: 6px;
+        transform: scale(1.08);
+        -webkit-transform: scale(1.08);
+        -moz-transform: scale(1.08);
+        -ms-transform: scale(1.08);
+        -o-transform: scale(1.08);
+        transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out;
+        -moz-transition: all 1s ease-out;
+        -ms-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        }
+    }
+}
+.card {
+height: 350px;
+    img {
+    height: 200px;
+    }
+}
+.card-body {
+height: 75px;
+padding: inherit;
+    h5 {
+    color: var(--celeste-oscuro);
+    font-weight: bold;
+    }
+}
+.card-datos {
+height: 40px;
+display: flex;
+    a {
+    color: var(--celeste-oscuro);
+    text-decoration: none;
+        &:hover {
+        color: var(--azul);
+        font-weight: bold;
+        }
+    }
+}
+.link {
+width: 66%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.btn-primary {
+background: var(--celeste);
+border: 1px var(--celeste-oscuro);
+padding: 3px;
+margin: 5px;
+}
+
+/* --------MEDIA QUERIES---------- */
+
+@media only screen and (max-width: 576px) {
+    .curso {
+        width: 100%;
+        }
+        #descarga {
+        text-align: center;
+        }
+        .container__video h1 {
+        font-size: 25px;
+        }
+        .container__download {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 1px;
+        row-gap: 5px;
+        }
+        .download__flex {
+        width: 70%;
+        height: 92%;
+        }
+
+}

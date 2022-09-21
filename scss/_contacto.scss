@@ -1,0 +1,154 @@
+/*COLORES*/
+:root {
+--azul:#002B5B;
+--azul_transp: #264872b5;
+--azul2:#2B4865;
+--celeste-oscuro:#256D85;
+--celeste:#8FE3CF;
+--white:white;
+}
+* {
+margin: 0;
+padding: 0;
+font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* -------------CONTACTO----------------- */
+.container__type {
+display: flex;
+flex-direction: column;
+margin: 20px;
+}
+.encabezado__type {
+display: flex;
+align-items: center;
+    h2 {
+    color: var(--celeste-oscuro);
+    font-size: 30px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    }
+}
+.type {
+display: flex;
+flex-direction: column;
+align-items: center;
+    h2 {
+    color: var(--celeste-oscuro);
+    font-size: 25px;
+    }
+}
+.form__flex {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 360px;
+border: solid 0.5px black;
+background:#CFD2CF;
+box-shadow:0 4px 8px 0;  
+}
+.datos {
+display: flex;
+flex-direction: column;
+margin: 5px;
+    label {
+    color: var(--azul);
+    padding: 5px;
+    margin: 5px;
+    }
+}
+.datos input {
+width: 370px;
+}
+.datos textarea {
+width: 370px;
+height: 100px;
+}
+.submit {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 80%;
+    input {
+    background: var(--celeste);
+    color: var(--azul);
+    width: 100%;
+    }
+}
+.submit:hover input {
+background: var(--azul2);
+color: white;
+}
+.container__contacto {
+    margin: 15px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.maps{
+    margin-right: 50px;
+}
+.contacto {
+display: flex;
+justify-content: space-between;
+    div {
+    display: flex;
+    align-items: center;
+        i {
+        margin: 10px;
+        }
+    }
+}
+.contacto button {
+color: var(--azul);
+border: 1px solid var(--azul);
+}
+.btn-group {
+height: min-content;
+}
+.btn-group:hover .btn-primary {
+background: var(--azul2);
+}
+
+/* --------MEDIA QUERIES---------- */
+
+@media only screen and (max-width: 576px) {
+    .type {
+        margin-top: 20px;
+            h2 {
+            margin: 10px;
+            }
+        }
+        .dato{
+        width: 250px;
+            input {
+            width: 355px;
+            }
+        }
+        .encabezado__type{
+            justify-content: center;
+        }
+        .contacto{
+        margin-right: 30px;
+        }
+        .maps{
+            margin: 55px;
+            margin-left: 160px;
+        }
+        .container__contacto{
+            flex-direction: column;
+        }
+        .btn-group{
+            width: 50%;
+        }
+        .boton{
+            width: 100%;
+        }
+        .btn-primary{
+        width: 100%;
+        }
+}
