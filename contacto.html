@@ -1,193 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/mis-alas3.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <script src="https://kit.fontawesome.com/d918228f94.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Contacto</title>
-</head>
-
-<body>
-      
-    <header class="header">
-        <nav class="navbar navbar-expand-lg bg-white fixed-top">
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="pasteleria, cursos aprende pasteleria, recetas pasteleria">
+        <meta name="description" content="No dudes en comunicarte con nosotros al (1126105121). Elige nuestros productos, los productos que te mereces (Llamanos al 1126105121)" >
+        <link rel="shortcut icon" href="./img/mis-alas3.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Mis Alas Pasteleria, lo mejor en pasteleria, cursos y recetas</title>
+    </head>
+    <body>
+        <!---------------------------------HEADER---------------------------------------->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html"><img src="./img/mis-alas3.png" alt=""></a>
-                    
+                    <a class="navbar-brand" href="./index.html"><img src="./img/mis-alas3.png" alt="logo mis alas pasteleria"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                     </button>
-
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mis Alas Pasteleria</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-
                         <div class="offcanvas-body"> 
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        
                                 <li class="nav-item">
                                     <a class="nav-link" href="./index.html">Inicio</a>
                                 </li>
-
                                 <li class="nav-item">
                                     <a class="nav-link" href="./tienda.html">Tienda</a>
                                 </li>
-
                                 <li class="nav-item">
                                     <a class="nav-link" href="./cursos.html">Curso</a>
                                 </li>
-
                                 <li class="nav-item">
                                     <a class="nav-link" href="./nosotros.html">Nosotros</a>
                                 </li>
-
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
                                 </li> 
-
                             </ul>
                         </div>
-
-                    </div>
-
-                </div>
-        </nav>
-
-    </header>
-    <!-- seccion ingreso de datos y mensaje -->
-    <section>
-        <div class="container__type" >
-            <div class="encabezado__type">
-                <img src="./img/persona.webp" alt="" height="100"width="100">
-                <h2>Hola!</h2>
-            </div>
-            <div class="type">
-                <h2>Ingrese sus datos.</h2>
-                <form> 
-                    <div class="form__flex">
-                        <div class="datos">  
-                            <label for="nombre">Nombre</label>
-                            <input class="input" type="text" name="nombre" placeholder="Ingrese su Nombre...">
-                        </div>
-                        <div class="datos">
-                            <label for="mail">Mail</label>
-                            <input class="input" type="text" name="mail" placeholder="Ingrese su Mail...">
-                        </div>
-                        <div class="datos">
-                            <label for="mensaje ">Mensaje</label>
-                            <textarea name="Mensaje" id="" cols="50" rows="10"></textarea>
-                        </div>
-                        <div class="submit">
-                            <input type="submit" value="Enviar">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-<!-- seccion direccion y datos de comunicacion -->
-    <section>
-
-        <div class="container__contacto">
-
-            <div class="contacto">
-
-                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">                
-                    <div class="boton" role="group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-telephone-fill"></i>Telefono
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item">1160512227</a></li>
-                        </ul>
                     </div>
                 </div>
-
-                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">                
-                    <div class="boton" role="group">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-envelope-fill"></i> Email
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item">velasquezcintia@yahoo.com.ar</a></li>
-                        </ul>
+            </nav>
+        </header>
+        <!----------------------------SECCION INGRESO DE DATOS------------------------>
+        <section>
+            <div class="container__type" >
+                <div class="encabezado__type">
+                    <img src="./img/persona.webp" alt="" height="100"width="100">
+                    <h2>Hola!</h2>
+                </div>
+                <div class="type">
+                    <h2>Ingrese sus datos.</h2>
+                    <form> 
+                        <div class="form__flex">
+                            <div class="datos">  
+                                <label for="nombre">Nombre</label>
+                                <input class="input" type="text" name="nombre" placeholder="Ingrese su Nombre...">
+                            </div>
+                            <div class="datos">
+                                <label for="mail">Mail</label>
+                                <input class="input" type="text" name="mail" placeholder="Ingrese su Mail...">
+                            </div>
+                            <div class="datos">
+                                <label for="mensaje ">Mensaje</label>
+                                <textarea name="Mensaje" id="" cols="50" rows="10"></textarea>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    <!------------------------------SECCION DATOS DE CONTACTO--------------------------->
+        <section>
+            <div class="container__contacto">
+                <div class="contacto">
+                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">                
+                        <div class="boton" role="group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-telephone-fill"></i>Telefono
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item">1126105121</a></li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">                
+                        <div class="boton" role="group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-envelope-fill"></i> Email
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item">velasquezcintia@yahoo.com.ar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.
+                    916456468008!2d-58.40837218518696!3d-34.833192977182065!2m3!1f0!2f0!3f0!
+                    3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd485569c3685%3A0xac9a273830a8c4c
+                    d!2sConstituci%C3%B3n%201754%2C%20B1852KMX%20Burzaco%2C%20Provincia%20de
+                    %20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1662269416526!5m2!1ses-419!2sar
+                    " width="250" height="150" style="border:0;" allowfullscreen="" 
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-
-            </div> 
-           
-            <div class="maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.
-                916456468008!2d-58.40837218518696!3d-34.833192977182065!2m3!1f0!2f0!3f0!
-                3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd485569c3685%3A0xac9a273830a8c4c
-                d!2sConstituci%C3%B3n%201754%2C%20B1852KMX%20Burzaco%2C%20Provincia%20de
-                %20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1662269416526!5m2!1ses-419!2sar
-                " width="250" height="150" style="border:0;" allowfullscreen="" 
-                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-           
-        </div>
-
-    </section>
-    <!-- Pie de pagina -->
-    <footer class="footer">
-
-        <div class="flex__divisoria">
-
-            <div class="divisoria">
-                <img src="./img/divisoria.png" alt="divisoria">
-            </div>
-
-            <div class="flex__divisoria2">
-
-                <div class="footer__menu">
-                    <nav>
-                        <ul>
-                            <li><a href="./index.html">Inicio</a></li>
-                            <li><a href="./tienda.html">Tienda</a></li>
-                            <li><a href="./cursos.html">Cursos</a></li>
-                            <li><a href="./nosotros.html">Nosotros</a></li>
-                            <li><a class="activo2" href="#">Contacto</a></li>
-                        </ul>
-                    </nav>
+        </section>
+        <!--------------------------------------FOOTER------------------------------->
+        <footer class="footer">
+            <div class="flex__divisoria">
+                <div class="divisoria">
+                    <img src="./img/divisoria.png" alt="divisoria">
                 </div>
-
-                <div>
-                    <p>Copyrhigt© 2022 Todo el contenido de esta pagina web es propiedad de Mis Alas Pastelería.</p>
-                </div>
-
-                <div class="redes__flex">
-                    <div class="redes__f">
-                        <a href="https://www.facebook.com/MisAlasPasteleria" target="_blank"><i class="bi bi-facebook"></i></a>
+                <div class="flex__divisoria2">
+                    <div class="footer__menu">
+                        <nav>
+                            <ul>
+                                <li><a href="./index.html">Inicio</a></li>
+                                <li><a href="./tienda.html">Tienda</a></li>
+                                <li><a href="./cursos.html">Cursos</a></li>
+                                <li><a href="./nosotros.html">Nosotros</a></li>
+                                <li><a class="activo2" href="#">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <p>Copyrhigt© 2022 Todo el contenido de esta pagina web es propiedad de Mis Alas Pastelería.</p>
+                    </div>
+                    <div class="redes__flex">
+                        <div class="redes__f">
+                            <a href="https://www.facebook.com/MisAlasPasteleria" target="_blank"><i class="bi bi-facebook"></i></a>
+                        </div> 
+                        <div class="redes__w">
+                            <a class="w" href="https://wa.link/bnhbne" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                        <div class="redes__i">
+                            <a class="i" href="https://www.instagram.com/misalas_pasteleria/ " target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div>  
                     </div> 
-
-                    <div class="redes__w">
-                        <a class="w" href="https://wa.link/bnhbne" target="_blank"><i class="bi bi-whatsapp"></i></a>
-                    </div>
-
-                    <div class="redes__i">
-                        <a class="i" href="https://www.instagram.com/misalas_pasteleria/ " target="_blank"><i class="bi bi-instagram"></i></a>
-                    </div>  
-            </div> 
-                
+                </div>
             </div>
-
-        </div>
-
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-
-</body>
-
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    </body>
 </html>

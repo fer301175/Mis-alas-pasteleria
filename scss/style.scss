@@ -1,13 +1,15 @@
 
 /*COLORES*/
-:root {
---azul:#002B5B;
---azul_transp: #264872b5;
---azul2:#2B4865;
---celeste-oscuro:#256D85;
---celeste:#8FE3CF;
---white:white;
-}
+$color: (
+azul:#002B5B,
+azul_transp: #264872b5,
+azul2:#2B4865,
+celeste-oscuro:#4267B2,
+celeste:#8FE3CF,
+white:white,
+rosa:#C13584,
+verde:#25D366
+);
 
 * {
 margin: 0;
@@ -19,6 +21,12 @@ font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 @import"curso";
 @import"nosotros";
 @import"contacto";
+
+@mixin flex-center{
+  display:flex;
+  align-items:center;
+  }
+  
 
 /*--HEADER COMUN A TODAS LAS PAGINAS -----------*/
 header {
@@ -66,9 +74,9 @@ width: 15%;
     text-decoration: none;  
       &:hover {
       font-weight: bold;
-      color: var(--celeste-oscuro);
+      color: map-get($color,celeste-oscuro);
       &:hover {
-      color: var(--azul);
+      color: map-get($color,rosa);
       }
       }
     }
@@ -76,15 +84,14 @@ width: 15%;
 }
 .footer__menu li a.activo2 {
 font-weight: bold;
-color: var(--azul);
+color: map-get($color,rosa);
 }
 .redes__flex{
   margin-left: 60px;
 }
 .redes {
-display: flex;
+@extend .footer;
 align-items: center;
-justify-content: space-around;
 width: 15%;
   img {
   width: 20px;
@@ -92,24 +99,21 @@ width: 15%;
   }
 }
 .redes__f {
-display: flex;
-align-items: center;
+@include flex-center;
   a {
-  color: #4267B2;
+    color: map-get($color,celeste-oscuro);
   }
 }
 .redes__w {
-display: flex;
-align-items: center;
+@include flex-center;
   a {
-  color: #25D366;
+  color:map-get($color,verde);
   }
 }
 .redes__i {
-display: flex;
-align-items: center;
+@include flex-center;
 a {
-color: #C13584;
+color:map-get($color,rosa);
 }
 }
 
@@ -131,8 +135,8 @@ height: 10px;
     margin-left: 50px;
         ul{
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
+        flex-direction: row;
         }
     }
 }

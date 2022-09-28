@@ -1,255 +1,229 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/mis-alas3.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Tienda</title>
-</head>
-<body> 
-
-    <header class="header">
-        <nav class="navbar navbar-expand-lg bg-white fixed-top">
-
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html"><img src="./img/mis-alas3.png" alt=""></a>
-                    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                     </button>
-
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mis Alas Pasteleria</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-
-                        <div class="offcanvas-body"> 
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./index.html">Inicio</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="./tienda.html">Tienda</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./cursos.html">Curso</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                                </li> 
-
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-        </nav>
-
-    </header>
-
-    <section >
-            <h1 class="text__h1">Bienvenidos a la tienda!</h1>
-            <div class="tienda__flex">
-                <div class="container__tienda">
-                    <img src="./img/torta_1.jpg" alt="torta1" >
-                    <div class="tienda__tex">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Dignissimos eligendi repudiandae natus quas aut ad magnam, 
-                        dicta impedit placeat,</p>
-                        <div class="carrito"> 
-                            <a href="#"><i class="bi bi-cart4"></i></a> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="pastelería, cursos aprende pastelería, recetas pastelería">
+        <meta name="description" content="En nuestra tienda encontrarás productos confiables con agradable sabor a pastelería casera,¡te esperamos en mis alas!" >
+        <link rel="shortcut icon" href="./img/mis-alas3.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Mis Alas Pasteleria, lo mejor en pasteleria, cursos y recetas</title>
+    </head>
+    <body> 
+        <!-- -----------------------------HEADER------------------------------------ -->
+        <header class="header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./index.html"><img src="./img/mis-alas3.png" alt="logo mis alas pasteleria"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Mis Alas Pasteleria</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body"> 
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./tienda.html">Tienda</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./cursos.html">Curso</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                                    </li> 
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div> 
-                <div class="container__tienda"> 
-                    <img src="./img/torta_2.jpg" alt="torta2">
-                    <div class="tienda__tex">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Dignissimos eligendi repudiandae natus quas aut ad magnam, 
-                        dicta impedit placeat,</p>
-                        <div class="carrito"> 
-                            <a href="#"><i class="bi bi-cart4"></i></a> 
+            </nav>
+        </header>
+        <!-- --------------------------SECCION TIENDA------------------------------ -->
+        <section >
+                <h1 class="text__h1">Bienvenidos a la tienda!</h1>
+                <div class="tienda__flex">
+                    <div class="container__tienda">
+                        <img src="./img/torta_1.jpg" alt="torta de baby shark de mis alas pasteleria" >
+                        <div class="tienda__tex">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Dignissimos eligendi repudiandae natus quas aut ad magnam, 
+                            dicta impedit placeat,</p>
+                            <div class="carrito"> 
+                                <a href="#"><i class="bi bi-cart4"></i></a> 
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="container__tienda">
-                    <img src="./img/torta_3.jpg" alt="torta3">
-                    <div class="tienda__tex">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Dignissimos eligendi repudiandae natus quas aut ad magnam, 
-                        dicta impedit placeat,</p>
-                        <div class="carrito"> 
-                            <a href="#"><i class="bi bi-cart4"></i></a> 
-                        </div>
-                    </div>
-                </div>
-                <div class="container__tienda">
-                <img src="./img/torta_4.jpg" alt="torta4">
-                    <div class="tienda__tex">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Dignissimos eligendi repudiandae natus quas aut ad magnam, 
-                        dicta impedit placeat,</p>
-                        <div class="carrito"> 
-                            <a href="#"><i class="bi bi-cart4"></i></a> 
-                        </div>
-                    </div>
-                </div>
-                <div class="container__tienda">
-                    <img src="./img/torta_5.jpg" alt="torta1">
-                    <div class="tienda__tex">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Dignissimos eligendi repudiandae natus quas aut ad magnam, 
-                        dicta impedit placeat,</p>
-                        <div class="carrito"> 
-                            <a href="#"><i class="bi bi-cart4"></i></a> 
-                        </div>
-                    </div>
-                </div> 
-                <div class="container__tienda">  
-                    <img src="./img/torta_6.jpg" alt="torta2">
-                    <div class="tienda__tex">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Dignissimos eligendi repudiandae natus quas aut ad magnam, 
-                        dicta impedit placeat,</p>
-                        <div class="carrito"> 
-                            <a href="#"><i class="bi bi-cart4"></i></a> 
-                        </div>
-                    </div>
-                </div>
-                <div class="container__tienda">
-                    <img src="./img/torta_7 .jpeg" alt="torta3">
-                    <div class="tienda__tex">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Dignissimos eligendi repudiandae natus quas aut ad magnam, 
-                        dicta impedit placeat,</p>
-                        <div class="carrito"> 
-                            <a href="#"><i class="bi bi-cart4"></i></a> 
-                        </div>
-                    </div>
-                </div>
-                <div class="container__tienda">
-                    <img src="./img/torta_8.jpeg" alt="torta4">
-                    <div class="tienda__tex">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Dignissimos eligendi repudiandae natus quas aut ad magnam, 
-                        dicta impedit placeat,</p>
-                        <div class="carrito"> 
-                            <a href="#"><i class="bi bi-cart4"></i></a> 
-                        </div>
-                    </div>
-                </div>
-                <div class="container__tienda">
-                    <img src="./img/torta_9.jpeg" alt="torta4">
-                    <div class="tienda__tex">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Dignissimos eligendi repudiandae natus quas aut ad magnam, 
-                        dicta impedit placeat,</p>
-                        <div class="carrito"> 
-                            <a href="#"><i class="bi bi-cart4"></i></a> 
-                        </div>
-                    </div>
-                </div>
-                <div class="container__tienda">
-                    <img src="./img/torta_10.jpeg" alt="torta3">
-                    <div class="tienda__tex">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Dignissimos eligendi repudiandae natus quas aut ad magnam, 
-                        dicta impedit placeat,</p>
-                        <div class="carrito"> 
-                            <a href="#"><i class="bi bi-cart4"></i></a> 
-                        </div>
-                    </div>
-                </div>
-                <div class="container__tienda">
-                    <img src="./img/torta_11.jpeg" alt="torta4">
-                    <div class="tienda__tex">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Dignissimos eligendi repudiandae natus quas aut ad magnam, 
-                        dicta impedit placeat,</p>
-                        <div class="carrito"> 
-                            <a href="#"><i class="bi bi-cart4"></i></a> 
-                        </div>
-                    </div>
-                </div>
-                <div class="container__tienda">
-                    <img src="./img/torta_12.jpeg" alt="torta4">
-                    <div class="tienda__tex">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Dignissimos eligendi repudiandae natus quas aut ad magnam, 
-                        dicta impedit placeat,</p>
-                        <div class="carrito"> 
-                            <a href="#"><i class="bi bi-cart4"></i></a> 
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-    </section>
-    <!-- Pie de pagina -->
-    <footer class="footer">
-
-        <div class="flex__divisoria">
-
-            <div class="divisoria">
-                <img src="./img/divisoria.png" alt="divisoria">
-            </div>
-
-           <div class="flex__divisoria2">
-
-                <div class="footer__menu">
-                    <nav>
-                        <ul>
-                            <li><a href="./index.html">Inicio</a></li>
-                            <li><a class="activo2" href="#">Tienda</a></li>
-                            <li><a href="./cursos.html">Cursos</a></li>
-                            <li><a href="./nosotros.html">Nosotros</a></li>
-                            <li><a href="./contacto.html">Contacto</a></li>
-                        </ul>
-                    </nav>
-                </div>
-    
-                <div>
-                    <p>Copyrhigt© 2022 Todo el contenido de esta pagina web es propiedad de Mis Alas Pastelería.</p>
-                </div>
-    
-                <div class="redes__flex">
-                    <div class="redes__f">
-                        <a href="https://www.facebook.com/MisAlasPasteleria" target="_blank"><i class="bi bi-facebook"></i></a>
                     </div> 
-
-                    <div class="redes__w">
-                        <a class="w" href="https://wa.link/bnhbne" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    <div class="container__tienda"> 
+                        <img src="./img/torta_2.jpg" alt="torta tematica cerveza corona mis alas pasteleria">
+                        <div class="tienda__tex">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Dignissimos eligendi repudiandae natus quas aut ad magnam, 
+                            dicta impedit placeat,</p>
+                            <div class="carrito"> 
+                                <a href="#"><i class="bi bi-cart4"></i></a> 
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="redes__i">
-                        <a class="i" href="https://www.instagram.com/misalas_pasteleria/ " target="_blank"><i class="bi bi-instagram"></i></a>
-                    </div>  
-            </div> 
-                
+                    <div class="container__tienda">
+                        <img src="./img/torta_3.jpg" alt="torta de toy story de mis alas pasteleria">
+                        <div class="tienda__tex">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Dignissimos eligendi repudiandae natus quas aut ad magnam, 
+                            dicta impedit placeat,</p>
+                            <div class="carrito"> 
+                                <a href="#"><i class="bi bi-cart4"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__tienda">
+                    <img src="./img/torta_4.jpg" alt="torta de 15 años tematica mariposa de mis alas pasteleria">
+                        <div class="tienda__tex">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Dignissimos eligendi repudiandae natus quas aut ad magnam, 
+                            dicta impedit placeat,</p>
+                            <div class="carrito"> 
+                                <a href="#"><i class="bi bi-cart4"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__tienda">
+                        <img src="./img/torta_5.jpg" alt="torta de mi primera comunion de mis alas pasteleria">
+                        <div class="tienda__tex">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Dignissimos eligendi repudiandae natus quas aut ad magnam, 
+                            dicta impedit placeat,</p>
+                            <div class="carrito"> 
+                                <a href="#"><i class="bi bi-cart4"></i></a> 
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="container__tienda">  
+                        <img src="./img/torta_6.jpg" alt="torta de la granja de zenon de mis alas pasteleria">
+                        <div class="tienda__tex">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Dignissimos eligendi repudiandae natus quas aut ad magnam, 
+                            dicta impedit placeat,</p>
+                            <div class="carrito"> 
+                                <a href="#"><i class="bi bi-cart4"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__tienda">
+                        <img src="./img/torta_7 .jpeg" alt="torta del payaso plim plim de mis alas pasteleria">
+                        <div class="tienda__tex">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Dignissimos eligendi repudiandae natus quas aut ad magnam, 
+                            dicta impedit placeat,</p>
+                            <div class="carrito"> 
+                                <a href="#"><i class="bi bi-cart4"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__tienda">
+                        <img src="./img/torta_8.jpeg" alt="torta tematica de totoro de mis alas pasteleria">
+                        <div class="tienda__tex">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Dignissimos eligendi repudiandae natus quas aut ad magnam, 
+                            dicta impedit placeat,</p>
+                            <div class="carrito"> 
+                                <a href="#"><i class="bi bi-cart4"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__tienda">
+                        <img src="./img/torta_9.jpeg" alt="torta mandala forrada de mis alas pasteleria">
+                        <div class="tienda__tex">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Dignissimos eligendi repudiandae natus quas aut ad magnam, 
+                            dicta impedit placeat,</p>
+                            <div class="carrito"> 
+                                <a href="#"><i class="bi bi-cart4"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__tienda">
+                        <img src="./img/torta_10.jpeg" alt="torta tematica de frozen de mis alas pasteleria">
+                        <div class="tienda__tex">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Dignissimos eligendi repudiandae natus quas aut ad magnam, 
+                            dicta impedit placeat,</p>
+                            <div class="carrito"> 
+                                <a href="#"><i class="bi bi-cart4"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__tienda">
+                        <img src="./img/torta_11.jpeg" alt="torta simple de vainilla de mis alas pasteleria">
+                        <div class="tienda__tex">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Dignissimos eligendi repudiandae natus quas aut ad magnam, 
+                            dicta impedit placeat,</p>
+                            <div class="carrito"> 
+                                <a href="#"><i class="bi bi-cart4"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__tienda">
+                        <img src="./img/torta_12.jpeg" alt="torta de colores pasteles, decoracion en crema los mejores colores pasteles de mis alas pasteleria">
+                        <div class="tienda__tex">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Dignissimos eligendi repudiandae natus quas aut ad magnam, 
+                            dicta impedit placeat,</p>
+                            <div class="carrito"> 
+                                <a href="#"><i class="bi bi-cart4"></i></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!----------------------FOOTERS--------------------------->
+        <footer class="footer">
+            <div class="flex__divisoria">
+                <div class="divisoria">
+                    <img src="./img/divisoria.png" alt="divisoria">
+                </div>
+                <div class="flex__divisoria2">
+                    <div class="footer__menu">
+                        <nav>
+                            <ul>
+                                <li><a href="./index.html">Inicio</a></li>
+                                <li><a class="activo2" href="#">Tienda</a></li>
+                                <li><a href="./cursos.html">Cursos</a></li>
+                                <li><a href="./nosotros.html">Nosotros</a></li>
+                                <li><a href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <p>Copyrhigt© 2022 Todo el contenido de esta pagina web es propiedad de Mis Alas Pastelería.</p>
+                    </div>
+                    <div class="redes__flex">
+                        <div class="redes__f">
+                            <a href="https://www.facebook.com/MisAlasPasteleria" target="_blank"><i class="bi bi-facebook"></i></a>
+                        </div> 
+                        <div class="redes__w">
+                            <a class="w" href="https://wa.link/bnhbne" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                        <div class="redes__i">
+                            <a class="i" href="https://www.instagram.com/misalas_pasteleria/ " target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div>  
+                    </div> 
+                </div>
             </div>
-
-        </div>
-
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-
-</body>
-
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    </body>
 </html>
