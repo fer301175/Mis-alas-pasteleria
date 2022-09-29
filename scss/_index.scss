@@ -13,7 +13,7 @@ padding: 0;
 font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 /*-------------INDEX---------------------*/
-.title-h1{
+.title__h1 {
     color: var(--celeste-oscuro);
     font-size: 30px;
     text-align: center;
@@ -50,8 +50,11 @@ margin: 2%;
 /* --------MEDIA QUERIES---------- */
 @media only screen and (max-width: 576px) {
 
-    .title-h1{
+    .title__h1{
         font-size: 25px;
+    }
+    .carousel-inner{
+        width: 100%;
     }
 
 }

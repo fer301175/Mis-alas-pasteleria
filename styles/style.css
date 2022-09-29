@@ -22,14 +22,12 @@
 }
 
 /*-------------INDEX---------------------*/
-.title__h1{
+.title__h1 {
   color: var(--celeste-oscuro);
   font-size: 30px;
   text-align: center;
 }
-.container__slider{
-  margin-left: 13px;
-}
+
 .container__flex {
   display: flex;
   flex-direction: column;
@@ -60,20 +58,16 @@
   flex-direction: column;
   margin: 2%;
 }
+
 /* --------MEDIA QUERIES---------- */
 @media only screen and (max-width: 576px) {
-
-.title-h1{
+  .title__h1 {
     font-size: 25px;
+  }
+  .carousel-inner {
+    width: 100%;
+  }
 }
-.container__slider{
-  margin-right: 13px;
-}
-.carousel-inner img{
-  width: 100%;
-}
-}
-
 /*COLORES*/
 :root {
   --azul:#002B5B;
@@ -93,6 +87,7 @@
 /* ---TIENDA---------------------- */
 .text__h1 {
   color: var(--celeste-oscuro);
+  font-size: 30px;
   text-align: center;
 }
 
@@ -185,9 +180,6 @@
 
 /* --------MEDIA QUERIES---------- */
 @media only screen and (max-width: 576px) {
-  .text__h1{
-    font-size: 25px;
-  }
   .tienda__flex {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -210,11 +202,12 @@
 }
 
 /* ---------CURSOS--------- */
-.curso__h1{
-color: var(--celeste-oscuro);
-font-size: 30px;
-text-align: center;
+.curso__h1 {
+  color: var(--celeste-oscuro);
+  font-size: 30px;
+  text-align: center;
 }
+
 .container__video {
   display: flex;
   flex-direction: column;
@@ -317,9 +310,6 @@ text-align: center;
 
 /* --------MEDIA QUERIES---------- */
 @media only screen and (max-width: 576px) {
-  .curso__h1{
-    font-size: 25px;
-  }
   .curso {
     width: 100%;
   }
@@ -376,11 +366,6 @@ text-align: center;
   font-size: 30px;
   width: 100%;
   color: var(--celeste-oscuro);
-  transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
 }
 
 .slider__nosotros {
@@ -415,8 +400,6 @@ text-align: center;
     flex-direction: column;
     align-items: center;
     height: 240px;
-    margin-left: 10px;
-    width: 96%;
   }
 }
 /*COLORES*/
@@ -654,7 +637,7 @@ header {
 }
 
 .redes__flex {
-  margin-left: 60px;
+  margin-left: 140px;
 }
 
 .redes {
@@ -713,6 +696,7 @@ header {
     flex-direction: row;
   }
   .footer p, .redes p {
+    margin: 0;
     width: 450px;
     padding: 10px;
     font-size: 15px;
@@ -727,6 +711,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-left: 65px;
   }
 }
 /*# sourceMappingURL=style.css.map */

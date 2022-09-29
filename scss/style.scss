@@ -29,6 +29,7 @@ font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   
 
 /*--HEADER COMUN A TODAS LAS PAGINAS -----------*/
+
 header {
 height: 100px;
 }
@@ -87,7 +88,7 @@ font-weight: bold;
 color: map-get($color,rosa);
 }
 .redes__flex{
-  margin-left: 60px;
+  margin-left: 140px;
 }
 .redes {
 @extend .footer;
@@ -156,6 +157,7 @@ width: 450px;
 display: flex;
 justify-content: space-around;
 align-items: center;
+margin-left: 65px;
 }
 }
   
