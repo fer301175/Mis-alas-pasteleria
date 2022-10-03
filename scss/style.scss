@@ -1,4 +1,6 @@
-
+ * {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 /*COLORES*/
 $color: (
 azul:#002B5B,
@@ -6,16 +8,14 @@ azul_transp: #264872b5,
 azul2:#2B4865,
 celeste-oscuro:#4267B2,
 celeste:#8FE3CF,
+celeste-trasparente:#8fe3cf75,
 white:white,
+white-transp:rgba(255, 255, 255, 0.585),
+black:black,
 rosa:#C13584,
 verde:#25D366
 );
-
-* {
-margin: 0;
-padding: 0;
-font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
+@import "normalize";
 @import"index";
 @import"tienda";
 @import"curso";

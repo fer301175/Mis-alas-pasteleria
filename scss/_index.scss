@@ -1,28 +1,53 @@
-/*COLORES*/
-:root {
---azul:#002B5B;
---azul_transp: #264872b5;
---azul2:#2B4865;
---celeste-oscuro:#256D85;
---celeste:#8FE3CF;
---white:white;
+
+@-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+    }
 }
-* {
-margin: 0;
-padding: 0;
-font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+@keyframes tracking-in-expand-fwd {
+    0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+    }
 }
+
 /*-------------INDEX---------------------*/
+.carousel-item img{
+    margin-left: 14px;
+}
 .title__h1 {
-    color: var(--celeste-oscuro);
+    color: map-get($color,celeste-oscuro);
     font-size: 30px;
     text-align: center;
+    -webkit-animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 .container__flex {
 display: flex;
 flex-direction: column;
     h2 {
-    color: var(--celeste-oscuro);
+    color: map-get($color,celeste-oscuro);
     text-align: center;
     margin-top: 10px;
         }
@@ -32,24 +57,62 @@ display: flex;
 justify-content: space-evenly;
 flex-wrap: wrap;
 margin: 1%;
-        img {
-        width: 400px;
-        height: 250px;
-            div p {
-            text-align: center;           
-        }
-}
 }   
 .article {
 width: 400px;
 display: flex;
 flex-direction: column;
 margin: 2%;
+    img {
+    width: 400px;
+    height: 250px;
+    }
+    h3{
+        padding: 10px;
+        height: 70px;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        color: map-get($color,celeste-oscuro);
+    }
+    p {
+        padding: 10px;
+        height: 70px;
+        text-align: center;           
+    }
+    a{
+        border: 1px solid map-get($color,celeste);
+        &:hover{
+            background: map-get($color,celeste-trasparente);
+        }
+        i{
+            color: map-get($color,rosa);
+            transition: .5s;
+            margin: 190px;
+            &:hover{
+                color: map-get($color,verde);
+                transition: .5s;
+            }
+        }
+    }
+    h4{
+        text-align: center;
+        color: map-get($color,verde);
+        font-size: 20px;
+        transition: .5s;
+        &:hover{
+            font-size: 22px;
+            transition: .5s;
+        }
+    } 
 }
 
 /* --------MEDIA QUERIES---------- */
 @media only screen and (max-width: 576px) {
-
+    .carousel-item img{
+        width: 100%;
+        margin: 0;
+    }
     .title__h1{
         font-size: 25px;
     }

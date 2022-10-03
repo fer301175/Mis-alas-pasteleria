@@ -1,20 +1,7 @@
-/*COLORES*/
-:root {
---azul:#002B5B;
---azul_transp: #264872b5;
---azul2:#2B4865;
---celeste-oscuro:#256D85;
---celeste:#8FE3CF;
---white:white;
-}
-* {
-margin: 0;
-padding: 0;
-font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
+
 /* ---------CURSOS--------- */
 .curso__h1{
-color: var(--celeste-oscuro);
+color:map-get($color,celeste-oscuro);
 font-size: 30px;
 text-align: center;
 }
@@ -32,8 +19,10 @@ justify-content: center;
 height: 320px;
 }
 #descarga {
-color: var(--celeste-oscuro);
-margin-left: 15px;
+color:map-get($color,celeste-oscuro);
+
+font-size: 30px;
+margin: 20px 0 20px 15px;
 }
 .container__download {
 display: grid;
@@ -81,7 +70,7 @@ height: 350px;
 height: 75px;
 padding: inherit;
     h5 {
-    color: var(--celeste-oscuro);
+    color:map-get($color,celeste-oscuro);
     font-weight: bold;
     }
 }
@@ -89,10 +78,10 @@ padding: inherit;
 height: 40px;
 display: flex;
     a {
-    color: var(--celeste-oscuro);
+    color:map-get($color,celeste-oscuro);
     text-decoration: none;
         &:hover {
-        color: var(--azul);
+        color:map-get($color,azul);
         font-weight: bold;
         }
     }
@@ -104,8 +93,8 @@ align-items: center;
 justify-content: center;
 }
 .btn-primary {
-background: var(--celeste);
-border: 1px var(--celeste-oscuro);
+background:map-get($color,celeste);
+border: 1px map-get($color,celeste-oscuro);
 padding: 3px;
 margin: 5px;
 }

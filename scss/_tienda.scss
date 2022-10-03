@@ -1,23 +1,30 @@
-/*COLORES*/
-:root {
---azul:#002B5B;
---azul_transp: #264872b5;
---azul2:#2B4865;
---celeste-oscuro:#256D85;
---celeste:#8FE3CF;
---white:white;
-}
-* {
-margin: 0;
-padding: 0;
-font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
+
 /* ---TIENDA---------------------- */
 .text__h1{
-color: var(--celeste-oscuro);
+color: map-get($color,celeste-oscuro);
 font-size: 30px;
 text-align: center;
+width: 30%;
+margin-left: 35%;
+position: relative;
 }
+.text__h1::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: map-get($color,celeste);
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+}
+.text__h1:hover:after{
+width: 100%;
+right: 0;
+}
+
+
 .tienda__flex {
 display: grid;
 grid-template-columns: repeat(4, 1fr);
@@ -44,17 +51,17 @@ border-radius: 15px;
 display: flex;
 flex-direction: column;
 align-items: center;
-color: var(--white);
+color: map-get($color,white);
 position: absolute;
 top: 0;
 width: 100%;
 height: 100%;
-background: var(--azul_transp);
+background: map-get($color,azul_transp);
 opacity: 0;
 visibility: hidden;
 text-align: center;
     i:hover {
-    color: black;
+    color:map-get($color,black);
     }
 }
 .container__tienda:hover > .tienda__tex {
@@ -87,7 +94,7 @@ border-radius: 50%;
 -moz-border-radius: 50%;
 -ms-border-radius: 50%;
 -o-border-radius: 50%;
-background: var(--white);
+background: map-get($color,white);
 }
 .tienda__tex:hover > p {
 margin-top: 60px;

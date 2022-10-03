@@ -7,11 +7,6 @@
 --celeste:#8FE3CF;
 --white:white;
 }
-* {
-margin: 0;
-padding: 0;
-font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
 /* -------------CONTACTO----------------- */
 .container__type {
 display: flex;
@@ -22,7 +17,7 @@ margin: 20px;
 display: flex;
 align-items: center;
     h2 {
-    color: var(--celeste-oscuro);
+    color:map-get($color,celeste-oscuro);
     font-size: 30px;
     transition: 1s;
     -webkit-transition: 1s;
@@ -36,7 +31,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
     h2 {
-    color: var(--celeste-oscuro);
+    color:map-get($color,celeste-oscuro);
     font-size: 25px;
     }
 }
@@ -47,8 +42,8 @@ justify-content: center;
 align-items: center;
 width: 100%;
 height: 360px;
-border: solid 0.5px black;
-background:#CFD2CF;
+border: solid 0.5px map-get($color,black);
+background:map-get($color,white);
 box-shadow:0 4px 8px 0;  
 }
 .datos {
@@ -56,7 +51,7 @@ display: flex;
 flex-direction: column;
 margin: 5px;
     label {
-    color: var(--azul);
+    color:map-get($color,azul);
     padding: 5px;
     margin: 5px;
     }
@@ -74,14 +69,14 @@ justify-content: center;
 align-items: center;
 width: 80%;
     input {
-    background: var(--celeste);
-    color: var(--azul);
+    background:map-get($color,celeste);
+    color:map-get($color,azul);
     width: 100%;
     }
 }
 .submit:hover input {
-background: var(--azul2);
-color: white;
+background:map-get($color,azul);
+color:map-get($color,white);
 }
 .container__contacto {
     margin: 15px;
@@ -104,14 +99,14 @@ justify-content: space-between;
     }
 }
 .contacto button {
-color: var(--azul);
-border: 1px solid var(--azul);
+color:map-get($color,azul);
+border: 1px solid map-get($color,azul);
 }
 .btn-group {
 height: min-content;
 }
 .btn-group:hover .btn-primary {
-background: var(--azul2);
+background:map-get($color,azul);
 }
 
 /* --------MEDIA QUERIES---------- */
