@@ -1,5 +1,8 @@
 
 /* ---TIENDA---------------------- */
+.container__section__tienda{
+    margin-top: 130px;
+}
 .text__h1{
 color: map-get($color,celeste-oscuro);
 font-size: 30px;
@@ -23,8 +26,6 @@ position: relative;
 width: 100%;
 right: 0;
 }
-
-
 .tienda__flex {
 display: grid;
 grid-template-columns: repeat(4, 1fr);
@@ -35,8 +36,8 @@ align-items: center;
 .container__tienda {
 position: relative;
 margin: 10px;
-width: 230px;
-height: 230px;
+width: 90%;
+height: 94%;
 display: flex;
 align-items: center;
 overflow: hidden;
@@ -108,13 +109,19 @@ transition: all 600ms ease-out;
 /* --------MEDIA QUERIES---------- */
 @media only screen and (max-width: 576px) {
 
-    .tienda__flex {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        }
-
-
-
+.text__h1{
+margin: 0;
+width: 100%;
+font-size: 25px;
+}
+.tienda__flex {
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(6, 1fr);
+}
+.container__tienda{
+width: 266px;
+height: 250px;
+}
 }
 
 

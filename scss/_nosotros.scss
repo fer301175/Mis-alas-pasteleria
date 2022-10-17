@@ -1,5 +1,14 @@
 
 /* ------------------NOSOTROS---------------- */
+.container__section__nosotros{
+    margin-top: 120PX;
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        width: 100%;
+        color:map-get($color,celeste-oscuro);
+        }
+}
 .container__nosotros {
 display: flex;
 flex-direction: column;
@@ -11,16 +20,7 @@ margin-top: 20px;
 .nosotros__encabezado {
 display: flex;
 justify-content: space-between;
-align-items: center;
-    img {
-    width: 100px;
-    height: 100px;
-    }
-    h1 {
-    font-size: 30px;
-    width: 100%;
-    color:map-get($color,celeste-oscuro);
-    }
+align-items: center; 
 }
 .slider__nosotros {
 width: 100%;
@@ -44,15 +44,12 @@ text-align: center;
 /* --------MEDIA QUERIES---------- */
 
 @media only screen and (max-width: 576px) {
-    .nosotros__encabezado {
-        justify-content: flex-start;
-            h1 {
-            font-size: 25px;
-            }
-        }
-        .slider__nosotros {
-        flex-direction: column;
-        align-items: center;
-        height: 240px;
-        }
+.container__section__nosotros  h1 {
+    font-size: 25px;
+    }
+.slider__nosotros {
+flex-direction: column;
+align-items: center;
+height: 240px;
+}
 }
