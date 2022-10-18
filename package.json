@@ -9,5 +9,8 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-cache-bust": "^1.4.1"
+  }
 }

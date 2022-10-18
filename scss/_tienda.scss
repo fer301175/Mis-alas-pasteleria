@@ -1,4 +1,36 @@
 
+@-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+    }
+}
+@keyframes tracking-in-expand-fwd {
+    0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+    }
+}
 /* ---TIENDA---------------------- */
 .container__section__tienda{
     margin-top: 130px;
@@ -7,25 +39,10 @@
 color: map-get($color,celeste-oscuro);
 font-size: 30px;
 text-align: center;
-width: 30%;
-margin-left: 35%;
-position: relative;
+-webkit-animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
-.text__h1::after{
-    content: "";
-    width: 0;
-    height: 2px;
-    background: map-get($color,celeste);
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    transition: all .5s;
-    will-change: width;
-}
-.text__h1:hover:after{
-width: 100%;
-right: 0;
-}
+
 .tienda__flex {
 display: grid;
 grid-template-columns: repeat(4, 1fr);
